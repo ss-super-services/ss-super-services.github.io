@@ -407,3 +407,34 @@ a.contact-item:hover strong {
     font-size: 2.4rem;
   }
 }
+@media (min-width: 720px) {
+  .hero-slot {
+    display: flex;
+    align-items: center;
+    min-height: 0;
+    overflow: visible;
+  }
+  .hero-form {
+    position: relative;
+    inset: auto;
+    transform: none;
+    width: 100%;
+    margin-block: clamp(1.5rem, 4vw, 3rem);
+  }
+}
+@media (min-width: 720px) and (max-width: 1023px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+  .hero-copy {
+    max-width: 42rem;
+  }
+  .hero-slot {
+    width: min(100%, 34rem);
+    justify-self: center;
+  }
+  .hero-form {
+    margin-block: 0 3rem;
+  }
+}
