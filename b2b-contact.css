@@ -58,27 +58,43 @@ h3 {
   font-size: var(--type-body);
   line-height: 1.72;
 }
-.contact-link {
+.header-nav {
   display: flex;
-  align-items: baseline;
-  gap: 0.55rem;
-  min-width: auto;
-  padding: 0.7rem 1rem;
-  border: 1px solid var(--navy);
-  background: var(--navy);
-  color: #fff;
-  text-decoration: none;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(0.9rem, 1.7vw, 1.55rem);
 }
-.contact-link small {
-  color: #b9cee1;
-  font-size: 0.75rem;
+.header-nav a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 0;
+  color: var(--ink);
+  font-size: clamp(0.9rem, 0.85rem + 0.15vw, 1rem);
   font-weight: 500;
-  letter-spacing: 0.05em;
+  line-height: 1.4;
+  text-decoration: none;
+  white-space: nowrap;
 }
-.contact-link:hover {
-  background: var(--blue);
-  border-color: var(--blue);
-  color: #fff;
+.header-nav a:hover {
+  color: var(--blue);
+}
+.header-nav .contact-link {
+  min-width: 0;
+  min-height: 44px;
+  padding: 0.55rem 0;
+  border: 0;
+  background: transparent;
+  color: var(--navy);
+  font-size: inherit;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.38em;
+}
+.header-nav .contact-link:hover {
+  background: transparent;
+  color: var(--blue);
 }
 .hero-english {
   max-width: 37ch;
@@ -106,6 +122,8 @@ h3 {
   border-radius: 2px;
 }
 .hero-form {
+  align-content: start;
+  padding: 2.4rem 1.55rem 1.7rem;
   background: rgba(255, 255, 255, 0.95);
   border: 1px solid rgba(11, 31, 58, 0.18);
   box-shadow: 0 24px 60px rgba(11, 31, 58, 0.16);
@@ -117,6 +135,7 @@ h3 {
   background: #fff;
 }
 .hero-form h3 {
+  margin: 0;
   font-size: clamp(1.625rem, 1.4rem + 1vw, 2rem);
   line-height: 1.3;
 }
@@ -334,13 +353,37 @@ a.contact-item:hover strong {
     gap: 2.5rem;
   }
 }
-@media (max-width: 719px) {
-  .contact-link {
-    gap: 0.35rem;
-    padding: 0.6rem 0.75rem;
+@media (max-width: 980px) {
+  .header-row {
+    flex-wrap: wrap;
+    padding-bottom: 0.8rem;
   }
-  .contact-link small {
-    display: none;
+  .header-nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 719px) {
+  .header-row {
+    min-height: 0;
+    gap: 0.35rem;
+    padding-block: 0.4rem 0.85rem;
+  }
+  .header-nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.1rem 1rem;
+  }
+  .header-nav a {
+    justify-content: flex-start;
+    font-size: 0.95rem;
+  }
+  .header-nav .contact-link {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+  .hero-form {
+    padding: 2rem 1.25rem 1.4rem;
   }
   .hero-english {
     margin-top: 0.9rem;
