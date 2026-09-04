@@ -13,6 +13,12 @@ body {
   font-size: var(--type-body);
   line-height: 1.72;
 }
+.site-header {
+  padding-block: clamp(1.25rem, 2.2vw, 1.75rem);
+}
+.header-row {
+  min-height: auto;
+}
 .site-header::after {
   display: none;
 }
@@ -138,6 +144,12 @@ h3 {
   margin: 0;
   font-size: clamp(1.625rem, 1.4rem + 1vw, 2rem);
   line-height: 1.3;
+}
+.form-logo {
+  display: block;
+  width: clamp(9rem, 32%, 11rem);
+  height: auto;
+  margin: 0 0 0.4rem;
 }
 .hero-form p,
 .hero-form label,
@@ -355,32 +367,37 @@ a.contact-item:hover strong {
 }
 @media (max-width: 980px) {
   .header-row {
-    flex-wrap: wrap;
-    padding-bottom: 0.8rem;
+    flex-wrap: nowrap;
+    padding-bottom: 0;
   }
   .header-nav {
-    width: 100%;
-    justify-content: space-between;
+    width: auto;
+    justify-content: flex-end;
   }
 }
 @media (max-width: 719px) {
+  .site-header {
+    padding-block: 1rem 1.25rem;
+  }
   .header-row {
     min-height: 0;
-    gap: 0.35rem;
-    padding-block: 0.4rem 0.85rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 0;
   }
   .header-nav {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.1rem 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 1.5rem;
   }
   .header-nav a {
     justify-content: flex-start;
     font-size: 0.95rem;
   }
   .header-nav .contact-link {
-    grid-column: 1 / -1;
-    justify-self: start;
+    grid-column: auto;
+    justify-self: auto;
   }
   .hero-form {
     padding: 2rem 1.25rem 1.4rem;
