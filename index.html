@@ -151,6 +151,12 @@
         line-height: 1.47;
         letter-spacing: 0;
       }
+      .section-top h2 .phrase {
+        display: block;
+        width: fit-content;
+        max-width: 100%;
+        white-space: normal;
+      }
       h3 {
         font-size: var(--h3);
         font-weight: 700;
@@ -367,6 +373,19 @@
         gap: 1rem;
         padding: 2.1rem 0;
         border-bottom: 1px solid var(--line);
+      }
+      .service-item-visual {
+        grid-column: 1 / -1;
+        margin-bottom: 0.5rem;
+        overflow: hidden;
+        border-radius: clamp(1.1rem, 2vw, 1.5rem);
+      }
+      .service-item-image {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        filter: saturate(0.86) contrast(0.97);
       }
       .service-number,
       .step b {
@@ -703,6 +722,9 @@
           grid-template-columns: 5rem minmax(13rem, 0.65fr) 1.35fr;
           gap: 1.5rem;
         }
+        .service-item-visual {
+          grid-column: 1 / -1;
+        }
         .service-item p {
           margin-top: 0;
         }
@@ -821,6 +843,21 @@
         }
         .areas-grid {
           gap: 2.5rem;
+        }
+        .service-item {
+          grid-template-columns:
+            minmax(17rem, 0.92fr) 4rem minmax(13rem, 0.68fr)
+            minmax(0, 1.12fr);
+          align-items: center;
+          gap: 2rem;
+          padding: 2.5rem 0;
+        }
+        .service-item-visual {
+          grid-column: auto;
+          margin-bottom: 0;
+        }
+        .service-item p {
+          grid-column: auto;
         }
         .process-grid {
           gap: 1.7rem;
@@ -1109,15 +1146,15 @@
         <div class="shell">
           <div class="section-top reveal">
             <h2>
-              <span class="phrase">บริการที่รองรับ</span
-              ><span class="phrase">การทำงานในทุกวัน</span>
+              <span class="phrase">พื้นที่ที่เราดูแล</span
+              ><span class="phrase">สำหรับองค์กร</span>
             </h2>
             <p class="section-english" lang="en">
-              Ongoing facility services for everyday operations.
+              Facilities supported for ongoing operations.
             </p>
             <p>
-              เราเน้นงานบริหารต่อเนื่อง
-              เพื่อให้พื้นที่ส่วนกลางและพื้นที่ใช้งานมีทีมดูแลตามแผนที่ตกลงร่วมกัน
+              รองรับโรงงาน คอนโดและพื้นที่ส่วนกลาง รวมถึงอาคารสำนักงาน
+              โดยประเมินขอบเขตงานให้เหมาะกับแต่ละสถานที่
             </p>
           </div>
           <div class="areas-grid reveal">
@@ -1125,42 +1162,41 @@
               <div class="area-visual">
                 <img
                   class="area-image"
-                  src="assets/ss-super-services-brand/service-cleaning-team-v2.png"
-                  alt="ทีมแม่บ้าน S S Super Services กำลังทำความสะอาดพื้นที่สำนักงาน"
+                  src="assets/ss-super-services-brand/service-factory.png"
+                  alt="อาคารโรงงานและอุตสาหกรรม"
                 />
               </div>
-              <h3>บริหารงานทำความสะอาด</h3>
+              <h3>โรงงานและอุตสาหกรรม</h3>
               <p>
-                จัดทีมและวางแผนงานทำความสะอาดให้เหมาะกับพื้นที่ใช้งาน
-                พร้อมดูแลความเรียบร้อยอย่างต่อเนื่อง
+                ดูแลงานทำความสะอาดสำหรับพื้นที่ทำงาน พื้นที่ส่วนกลาง
+                และบริบทของแต่ละโรงงาน
               </p>
             </article>
             <article class="area">
               <div class="area-visual">
                 <img
                   class="area-image"
-                  src="assets/ss-super-services-brand/service-garden-team-v2.png"
-                  alt="พนักงาน S S Super Services กำลังดูแลสวนในพื้นที่โรงงาน"
+                  src="assets/ss-super-services-brand/service-condo.png"
+                  alt="อาคารคอนโดและพื้นที่ส่วนกลาง"
                 />
               </div>
-              <h3>บริการดูแลสวน</h3>
+              <h3>คอนโดและพื้นที่ส่วนกลาง</h3>
               <p>
-                ดูแลสนามหญ้าและพื้นที่สีเขียวให้เหมาะกับบริบทของสถานที่
-                พร้อมรักษาความเป็นระเบียบของหน้างาน
+                ประสานการดูแลความสะอาดเพื่อให้ผู้อยู่อาศัยและผู้ใช้อาคารได้รับประสบการณ์ที่เป็นระเบียบ
               </p>
             </article>
             <article class="area">
               <div class="area-visual">
                 <img
                   class="area-image"
-                  src="assets/ss-super-services-brand/service-onsite-briefing-v2.png"
-                  alt="ทีม S S Super Services ประชุมเตรียมความพร้อมก่อนเริ่มงาน"
+                  src="assets/ss-super-services-brand/service-office.png"
+                  alt="อาคารสำนักงาน"
                 />
               </div>
-              <h3>การดูแลตามหน้างาน</h3>
+              <h3>อาคารสำนักงาน</h3>
               <p>
-                ประชุม วางแผน และประสานทีมให้สอดคล้องกับลักษณะพื้นที่
-                ข้อกำหนด และลำดับความสำคัญขององค์กร
+                ช่วยให้พื้นที่ทำงานพร้อมใช้งาน
+                ด้วยการวางแผนบริการให้เหมาะกับรูปแบบการใช้งานขององค์กร
               </p>
             </article>
           </div>
@@ -1220,6 +1256,13 @@
           </div>
           <div class="service-list reveal">
             <article class="service-item">
+              <div class="service-item-visual">
+                <img
+                  class="service-item-image"
+                  src="assets/ss-super-services-brand/service-cleaning-team-v2.png"
+                  alt="ทีมแม่บ้าน S S Super Services กำลังทำความสะอาดพื้นที่สำนักงาน"
+                />
+              </div>
               <span class="service-number">01</span>
               <h3>บริหารงานทำความสะอาด</h3>
               <p>
@@ -1228,6 +1271,13 @@
               </p>
             </article>
             <article class="service-item">
+              <div class="service-item-visual">
+                <img
+                  class="service-item-image"
+                  src="assets/ss-super-services-brand/service-garden-team-v2.png"
+                  alt="พนักงาน S S Super Services กำลังดูแลสวนในพื้นที่โรงงาน"
+                />
+              </div>
               <span class="service-number">02</span>
               <h3>บริการดูแลสวน</h3>
               <p>
@@ -1235,6 +1285,13 @@
               </p>
             </article>
             <article class="service-item">
+              <div class="service-item-visual">
+                <img
+                  class="service-item-image"
+                  src="assets/ss-super-services-brand/service-onsite-briefing-v2.png"
+                  alt="ทีม S S Super Services ประชุมเตรียมความพร้อมก่อนเริ่มงาน"
+                />
+              </div>
               <span class="service-number">03</span>
               <h3>การดูแลตามหน้างาน</h3>
               <p>
