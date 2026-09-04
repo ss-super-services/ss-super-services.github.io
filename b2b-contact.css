@@ -13,6 +13,9 @@ body {
   font-size: var(--type-body);
   line-height: 1.72;
 }
+.site-header::after {
+  display: none;
+}
 [lang="en"] {
   font-family: "IBM Plex Sans", Arial, sans-serif;
 }
@@ -20,6 +23,12 @@ h1,
 h2,
 h3 {
   letter-spacing: -0.015em;
+  overflow-wrap: normal;
+  word-break: normal;
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
 }
 .hero-copy h1 {
   max-width: 15ch;
@@ -125,6 +134,20 @@ h3 {
 .form-status {
   line-height: 1.6;
 }
+.hero-form input,
+.hero-form select,
+input,
+select {
+  height: 3.5rem;
+  min-height: 3.5rem;
+  padding: 0.88rem 1rem 0.56rem;
+  line-height: 1.35;
+}
+.hero-form textarea,
+textarea {
+  padding: 1rem;
+  line-height: 1.65;
+}
 .hero-form .form-status {
   font-size: var(--type-small);
 }
@@ -175,6 +198,10 @@ a.contact-item:hover strong {
   stroke-linejoin: round;
   fill: none;
 }
+.contact-item .messenger-icon {
+  fill: currentColor;
+  stroke: none;
+}
 .contact-item small,
 .contact-item strong {
   display: block;
@@ -221,6 +248,13 @@ a.contact-item:hover strong {
 .coverage-points p,
 .coverage-chip-list span {
   font-size: var(--type-small);
+}
+.area h3 {
+  justify-self: center;
+  max-width: 18ch;
+  font-size: clamp(1.5rem, 1.25rem + 1.1vw, 1.875rem);
+  line-height: 1.35;
+  text-align: center;
 }
 .contact-form {
   padding: clamp(1.35rem, 3vw, 2.2rem);
@@ -296,7 +330,7 @@ a.contact-item:hover strong {
     margin-top: 0;
   }
   .footer-row {
-    grid-template-columns: 1fr auto auto;
+    grid-template-columns: minmax(0, 1fr) auto;
     gap: 2.5rem;
   }
 }
@@ -320,5 +354,13 @@ a.contact-item:hover strong {
   }
   .service-item p {
     grid-column: 2;
+  }
+}
+@media (max-width: 359px) {
+  .phrase {
+    white-space: normal;
+  }
+  .hero-copy h1 {
+    font-size: 2.4rem;
   }
 }
