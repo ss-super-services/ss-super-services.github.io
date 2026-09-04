@@ -1,10 +1,53 @@
 /* B2B bilingual refinement */
+:root {
+  --type-body: clamp(1.0625rem, 1rem + 0.28vw, 1.1875rem);
+  --type-lead: clamp(1.1875rem, 1.08rem + 0.48vw, 1.375rem);
+  --type-h3: clamp(1.375rem, 1.18rem + 0.82vw, 1.75rem);
+  --type-h2: clamp(2rem, 1.55rem + 2.2vw, 3.5rem);
+  --type-hero: clamp(2.75rem, 2rem + 3.8vw, 5rem);
+  --type-small: clamp(0.9375rem, 0.9rem + 0.16vw, 1rem);
+}
 body {
   font-family:
     "IBM Plex Sans Thai", "IBM Plex Sans", "Noto Sans Thai", Tahoma, sans-serif;
+  font-size: var(--type-body);
+  line-height: 1.72;
 }
 [lang="en"] {
   font-family: "IBM Plex Sans", Arial, sans-serif;
+}
+h1,
+h2,
+h3 {
+  letter-spacing: -0.015em;
+}
+.hero-copy h1 {
+  max-width: 15ch;
+  font-size: var(--type-hero);
+  line-height: 1.18;
+}
+h2 {
+  font-size: var(--type-h2);
+  line-height: 1.28;
+}
+h3 {
+  font-size: var(--type-h3);
+  line-height: 1.42;
+}
+.lead {
+  font-size: var(--type-lead);
+  line-height: 1.72;
+}
+.section-top > p,
+.area p,
+.service-item p,
+.step p,
+.area-band p,
+.commitment p,
+.standard-card p,
+.coverage-copy > p:last-child {
+  font-size: var(--type-body);
+  line-height: 1.72;
 }
 .contact-link {
   display: flex;
@@ -32,7 +75,7 @@ body {
   max-width: 37ch;
   margin-top: 1.15rem;
   color: var(--blue);
-  font-size: clamp(1rem, 1.5vw, 1.18rem);
+  font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
   font-weight: 600;
   line-height: 1.55;
 }
@@ -40,7 +83,7 @@ body {
   max-width: 46ch !important;
   margin-top: 0.75rem !important;
   color: var(--blue) !important;
-  font-size: clamp(0.94rem, 1.25vw, 1.05rem);
+  font-size: clamp(1rem, 0.96rem + 0.22vw, 1.125rem);
   font-weight: 600;
   line-height: 1.55 !important;
 }
@@ -64,6 +107,27 @@ body {
 .hero-form textarea {
   background: #fff;
 }
+.hero-form h3 {
+  font-size: clamp(1.625rem, 1.4rem + 1vw, 2rem);
+  line-height: 1.3;
+}
+.hero-form p,
+.hero-form label,
+.hero-form input,
+.hero-form select,
+.hero-form textarea,
+.button {
+  font-size: 1rem;
+}
+.hero-form p,
+.hero-form label,
+.form-help,
+.form-status {
+  line-height: 1.6;
+}
+.hero-form .form-status {
+  font-size: var(--type-small);
+}
 .contact-panel {
   margin-top: 2.2rem;
   padding-top: 1.6rem;
@@ -71,13 +135,13 @@ body {
 }
 .contact-panel h3 {
   color: #fff;
-  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  font-size: var(--type-h3);
 }
 .contact-panel h3 span {
   display: block;
   margin-top: 0.25rem;
   color: #8fc4ee;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
 }
@@ -117,14 +181,14 @@ a.contact-item:hover strong {
 }
 .contact-item small {
   color: #aebfd1;
-  font-size: 0.78rem;
+  font-size: var(--type-small);
   font-weight: 500;
   line-height: 1.45;
 }
 .contact-item strong {
   margin-top: 0.15rem;
   color: #fff;
-  font-size: clamp(0.96rem, 1.2vw, 1.08rem);
+  font-size: clamp(1.0625rem, 1rem + 0.28vw, 1.1875rem);
   font-weight: 600;
   line-height: 1.55;
   overflow-wrap: anywhere;
@@ -132,14 +196,31 @@ a.contact-item:hover strong {
 .contact-note {
   margin-top: 1.35rem;
   color: var(--light);
-  font-size: 0.9rem;
-  line-height: 1.75;
+  font-size: 1rem;
+  line-height: 1.7;
 }
 .contact-note span {
   display: block;
   margin-top: 0.2rem;
   color: #aebfd1;
-  font-size: 0.82rem;
+  font-size: var(--type-small);
+}
+.service-number,
+.step b,
+.standard-number,
+.eyebrow,
+.standard-card,
+.coverage-points {
+  font-family: inherit;
+}
+.service-number,
+.step b,
+.standard-number,
+.eyebrow,
+.map-node,
+.coverage-points p,
+.coverage-chip-list span {
+  font-size: var(--type-small);
 }
 .contact-form {
   padding: clamp(1.35rem, 3vw, 2.2rem);
@@ -176,23 +257,23 @@ a.contact-item:hover strong {
 }
 .footer-brand strong {
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 .footer-brand span {
   margin-top: 0.2rem;
   color: #91a8bb;
-  font-size: 0.78rem;
+  font-size: var(--type-small);
   line-height: 1.5;
 }
 .footer-scope {
   color: #91a8bb;
-  font-size: 0.85rem;
+  font-size: var(--type-small);
   line-height: 1.65;
 }
 .back-to-top {
   width: max-content;
   color: #fff;
-  font-size: 0.86rem;
+  font-size: var(--type-small);
   font-weight: 600;
   text-underline-offset: 0.3em;
 }
