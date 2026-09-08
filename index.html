@@ -1598,7 +1598,7 @@
             sitekey: config.turnstileSiteKey,
             callback: (token) => {
               form.dataset.turnstileToken = token;
-              setStatus(form, "");
+              // Keep the submission result visible when a fresh token arrives.
             },
             "expired-callback": () => {
               form.dataset.turnstileToken = "";
@@ -1612,6 +1612,7 @@
       forms.forEach((form) =>
         form.addEventListener("submit", async (event) => {
           event.preventDefault();
+          if (form.dataset.submitting === "true") return;
           if (!form.reportValidity()) return;
           if (!config.formEndpoint || !config.turnstileSiteKey) {
             setStatus(form, "ระบบรับข้อมูลยังไม่เปิดใช้งาน", true);
@@ -1624,6 +1625,7 @@
           }
           const button = form.querySelector("button[type=submit]");
           button.disabled = true;
+          form.dataset.submitting = "true";
           setStatus(form, "กำลังส่งข้อมูล...");
           try {
             const response = await fetch(config.formEndpoint, {
@@ -1631,24 +1633,39 @@
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify(lead),
             });
-            const result = await response.json();
-            if (!response.ok || !result.ok)
-              throw new Error(result.message || "Submission failed");
-            setStatus(
-              form,
-              "ขอบคุณสำหรับรายละเอียด ทีมงานจะติดต่อกลับโดยเร็วที่สุด",
-            );
+            const result = await response.json().catch(() => null);
+            if (!response.ok || !result || !result.ok) {
+              let message = "ระบบยังยืนยันการรับข้อมูลไม่ได้ กรุณาติดต่อทีมงานโดยตรง";
+              if (response.status === 400 && result && /verification/i.test(result.message || ""))
+                message = "การยืนยันหมดอายุหรือไม่ผ่าน กรุณารอการยืนยันใหม่แล้วกดส่งอีกครั้ง";
+              else if (response.status === 400)
+                message = "ข้อมูลไม่ครบหรือรูปแบบไม่ถูกต้อง กรุณาตรวจสอบทุกช่อง";
+              else if (response.status === 403)
+                message = "ระบบปฏิเสธการเชื่อมต่อ กรุณาเปิดเว็บไซต์ตรงใน Chrome หรือ Safari";
+              else if (response.status === 429)
+                message = "ส่งคำขอถี่เกินไป กรุณารอสักครู่แล้วลองใหม่";
+              else if (response.status >= 500)
+                message = "ระบบรับข้อมูลขัดข้อง ข้อมูลอาจส่งไปแล้วบางส่วน กรุณาติดต่อทีมงานก่อนส่งซ้ำ";
+              const error = new Error(message);
+              error.userMessage = message + " (รหัส " + response.status + ")";
+              throw error;
+            }
             form.reset();
-            form.dataset.turnstileToken = "";
-            if (window.turnstile && form.dataset.turnstileWidget !== undefined)
-              window.turnstile.reset(Number(form.dataset.turnstileWidget));
+            setStatus(form, "ขอบคุณสำหรับรายละเอียด ทีมงานจะติดต่อกลับโดยเร็วที่สุด");
           } catch (error) {
-            setStatus(
-              form,
-              "ส่งข้อมูลไม่สำเร็จ กรุณาลองใหม่หรือติดต่อทีมงานโดยตรง",
-              true,
-            );
+            setStatus(form, error.userMessage ||
+              "เชื่อมต่อระบบรับข้อมูลไม่ได้ กรุณาตรวจสอบอินเทอร์เน็ต หรือเปิดเว็บไซต์ใน Chrome/Safari หากยังไม่สำเร็จให้ติดต่อทีมงาน (รหัส NETWORK)", true);
           } finally {
+            // Every submitted token is single-use, including failed requests.
+            form.dataset.turnstileToken = "";
+            try {
+              if (window.turnstile && form.dataset.turnstileWidget !== undefined)
+                window.turnstile.reset(form.dataset.turnstileWidget);
+            } catch (resetError) {
+              // A widget reset failure must not turn an accepted lead into an error.
+              console.warn("Unable to refresh verification; reload before submitting again.");
+            }
+            form.dataset.submitting = "false";
             button.disabled = false;
           }
         }),
