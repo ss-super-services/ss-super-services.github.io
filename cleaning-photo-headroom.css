@@ -1,0 +1,27 @@
+/* Preserve the original top margin above the cleaning team's caps. */
+body.reference-clone.site-polished:is(.home-page,.inner-page) img[src$="service-cleaning-team-v10.png"] {
+  object-position: center top;
+}
+/* The fixed header covers the top of the fullscreen hero. Keep this photo's
+   visible image area below it; the hero's dimensions and fade stay unchanged. */
+body.reference-clone.site-polished.home-page .hero-slide[src$="service-cleaning-team-v10.png"] {
+  top: 86px;
+  height: calc(100% - 86px);
+  object-position: center top;
+}
+/* Keep the existing hover motion, zooming away from the safe top edge. */
+body.reference-clone.site-polished.home-page .home-service-card > img[src$="service-cleaning-team-v10.png"] {
+  object-position: center top;
+  transform-origin: center top;
+}
+@media (max-width: 991px) {
+  body.reference-clone.site-polished.home-page .hero-slide[src$="service-cleaning-team-v10.png"] {
+    top: 78px;
+    height: calc(100% - 78px);
+  }
+}
+@media (max-width: 767px) {
+  body.reference-clone.site-polished.home-page .hero-slide[src$="service-cleaning-team-v10.png"] {
+    object-position: 30% top;
+  }
+}

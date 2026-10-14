@@ -1,0 +1,91 @@
+/* About Us only: reference-led story, photo collage, history. */
+body.reference-clone.site-polished.inner-page.about-page .ss-about-shell{width:min(1320px,calc(100% - 80px));margin-inline:auto}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-hero{height:500px}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-hero .catalog-hero-photo{object-position:center 38%}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-hero:after{background:rgba(6,34,77,.48)}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-story{position:relative;isolation:isolate;padding:100px 0 110px;background:#fff}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-mission{text-align:center;margin:0 auto 42px;max-width:1060px}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-mission>p{font:400 20px/30px 'Poppins','Kanit',sans-serif;color:#082b61;margin:0 0 12px;max-width:none}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-mission h2{font:500 32px/44px 'Kanit',sans-serif;color:#082b61;margin:0;text-wrap:balance}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-narrative h3{font:500 22px/32px 'Kanit',sans-serif;color:#082b61;margin:28px 0 12px}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-narrative p{font:400 16px/26px 'Kanit',sans-serif;color:#333;max-width:none;margin:0 0 22px}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-collage{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:38px 0 34px}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-collage figure{margin:0;aspect-ratio:3/2;overflow:hidden;border-radius:24px;background:#fff}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-collage img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 36%;transition:transform .65s cubic-bezier(.2,.65,.3,1)}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-collage figure:first-child img{object-position:center 42%}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-collage figure:nth-child(2) img{object-position:center top;transform-origin:center top}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-after-photos p:last-child{margin-bottom:0}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-history{background:#082b61;color:#fff;padding:72px 0 84px}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-section-heading{margin:0 0 42px}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-section-heading h2{font:500 32px/42px 'Kanit',sans-serif;margin:0 0 10px;color:#082b61}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-section-heading>p{font:400 17px/26px 'Poppins','Kanit',sans-serif;letter-spacing:.24em;max-width:none;color:#082b61;margin:0}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-history .ss-about-section-heading h2,body.reference-clone.site-polished.inner-page.about-page .ss-about-history .ss-about-section-heading>p{color:#fff}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-timeline{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;list-style:none;padding:0;margin:0}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-timeline>li{min-width:0;display:flex;flex-direction:column;margin:0;padding:0}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-year{position:relative;font:500 40px/52px 'Poppins','Kanit',sans-serif;color:#fff;padding:0 0 26px;margin:0 0 24px;border-bottom:0;max-width:none}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-year span{font:400 14px/22px 'Kanit',sans-serif}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-year:after{content:"";position:absolute;bottom:-5.5px;left:0;width:11px;height:11px;border-radius:50%;background:#fff}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-milestone{background:#fff;border-radius:20px;padding:28px 24px;flex:1}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-milestone h3{font:500 21px/30px 'Kanit',sans-serif;color:#082b61;margin:0 0 16px}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-milestone p{font:400 16px/26px 'Kanit',sans-serif;color:#333;max-width:none;margin:0}
+@media(hover:hover) and (pointer:fine){body.reference-clone.site-polished.inner-page.about-page .ss-about-collage figure:hover img{transform:scale(1.04)}}
+@media(max-width:991px){
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-shell{width:calc(100% - 40px)}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-hero{height:420px}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-story{padding:72px 0 80px}
+}
+@media(max-width:767px){
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-hero{height:350px}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-hero .catalog-hero-photo{object-position:48% center}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-story{padding:60px 0 64px}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-mission{margin-bottom:32px}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-mission>p{font-size:16px;line-height:26px}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-mission h2{font-size:26px;line-height:36px}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-collage{grid-template-columns:1fr;gap:20px;margin:30px 0}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-collage figure{border-radius:20px}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-history{padding:56px 0 64px}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-section-heading{margin-bottom:32px}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-section-heading h2{font-size:28px;line-height:38px}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-section-heading>p{font-size:14px;line-height:24px;letter-spacing:.18em}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-year{font-size:36px;line-height:48px;padding-bottom:18px;margin-bottom:22px}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-milestone{padding:26px 24px}
+}
+@media(prefers-reduced-motion:reduce){body.reference-clone.site-polished.inner-page.about-page .ss-about-collage img{transition:none;transform:none}}
+
+/* Keep Thai word endings together; balance/pretty enhance browsers that support them.
+   Semantic inline groups are the fallback, without fixed line breaks or truncation. */
+body.reference-clone.site-polished.inner-page.about-page :is(.ss-about-story,.ss-about-history) :is(h2,h3){text-wrap:balance;word-break:normal;overflow-wrap:normal}
+body.reference-clone.site-polished.inner-page.about-page :is(.ss-about-narrative,.ss-about-milestone) p{ text-wrap:pretty;word-break:normal;overflow-wrap:normal }
+body.reference-clone.site-polished.inner-page.about-page .ss-about-mission>p{text-wrap:balance}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-keep{white-space:nowrap}
+body.reference-clone.site-polished.inner-page.about-page .ss-about-year{white-space:nowrap}
+@media(max-width:479px){
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-shell{width:calc(100% - 32px)}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-mission h2{font-size:24px;line-height:35px}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-narrative h3{font-size:21px;line-height:32px}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-milestone{padding-inline:20px}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-milestone h3{font-size:20px;line-height:30px}
+}
+
+/* Keep the new collage portraits' original headroom, including on hover. */
+body.reference-clone.site-polished.inner-page.about-page .ss-about-collage img:is([src$="about-cleaning-v15.png"],[src$="about-gardening-v15.png"]){transform-origin:center top}
+@media(hover:hover) and (pointer:fine){
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-collage figure:hover img:is([src$="about-cleaning-v15.png"],[src$="about-gardening-v15.png"]){transform:scale(1.02)}
+}
+@media(prefers-reduced-motion:reduce){
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-collage figure:hover img:is([src$="about-cleaning-v15.png"],[src$="about-gardening-v15.png"]){transform:none}
+}
+
+/* A single shared track connects every milestone, including across card gaps. */
+body.reference-clone.site-polished.inner-page.about-page .ss-about-timeline:before{content:"";position:absolute;top:78px;left:0;width:100%;height:1px;background:#ffffff80;pointer-events:none}
+@media(max-width:991px){
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-timeline{display:block}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-timeline:before{top:26px;bottom:0;left:5px;width:1px;height:auto}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-timeline>li{position:relative;padding:0 0 32px 32px}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-timeline>li:last-child{padding-bottom:0}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-year{padding-bottom:0;margin-bottom:20px}
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-year:after{top:calc(50% - 5.5px);bottom:auto;left:-32px}
+}
+@media(max-width:767px){
+ body.reference-clone.site-polished.inner-page.about-page .ss-about-timeline:before{top:24px}
+}

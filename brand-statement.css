@@ -1,0 +1,76 @@
+/* Home brand statement only: editorial hierarchy and restrained edge artwork. */
+body.reference-clone.site-polished.home-page #vision.section.home-vision {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(64px, 7vw, 104px) 0 clamp(112px, 10vw, 128px);
+  background: #fff;
+}
+body.reference-clone.site-polished.home-page #vision.section.home-vision .brand-statement-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  align-items: end;
+  gap: clamp(36px, 5vw, 80px);
+  border-top: 1px solid #082b61;
+  padding-top: 34px;
+}
+body.reference-clone.site-polished.home-page #vision.section.home-vision .brand-statement-heading,
+body.reference-clone.site-polished.home-page #vision.section.home-vision .brand-statement-description { min-width: 0; }
+body.reference-clone.site-polished.home-page #vision.section.home-vision .brand-statement-label {
+  font: 500 13px/1.6 'Poppins', 'Kanit', sans-serif;
+  color: #082b61;
+  letter-spacing: .12em;
+  margin: 0 0 24px;
+  max-width: none;
+}
+body.reference-clone.site-polished.home-page #vision.section.home-vision .brand-statement-title {
+  font: 500 clamp(28px, 3vw, 42px)/1.45 'Kanit', sans-serif;
+  letter-spacing: 0;
+  color: #082b61;
+  margin: 0;
+  text-align: left;
+  text-wrap: pretty;
+  overflow-wrap: anywhere;
+}
+body.reference-clone.site-polished.home-page #vision.section.home-vision .brand-statement-title span { display: block; }
+body.reference-clone.site-polished.home-page #vision.section.home-vision .brand-statement-title span + span { margin-top: 4px; }
+body.reference-clone.site-polished.home-page #vision.section.home-vision .brand-statement-description p {
+  font: 400 17px/1.9 'Kanit', sans-serif;
+  color: #333;
+  margin: 0 0 5px;
+  max-width: 40ch;
+  text-wrap: pretty;
+  overflow-wrap: anywhere;
+}
+body.reference-clone.site-polished.home-page #vision.section.home-vision .brand-statement-lines {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: clamp(170px, 23vw, 280px);
+  height: auto;
+  pointer-events: none;
+  fill: none;
+  stroke: #082b61;
+  stroke-opacity: .13;
+  stroke-width: 1;
+}
+body.reference-clone.site-polished.home-page #vision.section.home-vision .brand-statement-lines .brand-statement-plane {
+  fill: #f4f4f3;
+  stroke: none;
+}
+@media (max-width: 800px) {
+  body.reference-clone.site-polished.home-page #vision.section.home-vision .brand-statement-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+    padding-top: 26px;
+  }
+  body.reference-clone.site-polished.home-page #vision.section.home-vision .brand-statement-label { margin-bottom: 20px; }
+  body.reference-clone.site-polished.home-page #vision.section.home-vision .brand-statement-title { font-size: clamp(27px, 4.8vw, 36px); }
+  body.reference-clone.site-polished.home-page #vision.section.home-vision .brand-statement-description p { max-width: 58ch; font-size: 16px; }
+}
+@media (max-width: 420px) {
+  body.reference-clone.site-polished.home-page #vision.section.home-vision .brand-statement-grid { width: calc(100% - 40px); }
+  body.reference-clone.site-polished.home-page #vision.section.home-vision .brand-statement-title { font-size: 27px; line-height: 1.5; }
+}

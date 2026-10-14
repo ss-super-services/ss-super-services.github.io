@@ -1,0 +1,306 @@
+body.reference-clone.site-polished:is(.home-page,.inner-page){--navy:#082b61;--ink:#333;--muted:#333;--pale:#fff;--line:#d5dce5;--deep-navy:#06224d;--soft-blue:#91accb;background:#fff;color:#333;font:400 16px/24px 'Kanit',sans-serif}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .shell{width:min(1320px,calc(100% - 80px));max-width:1320px;margin-inline:auto}
+body.reference-clone.site-polished:is(.home-page,.inner-page) main>.section>.shell,body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail>.shell,body.reference-clone.site-polished:is(.home-page,.inner-page) .service-feature>.shell{width:min(1320px,calc(100% - 80px));max-width:1320px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) main p,body.reference-clone.site-polished:is(.home-page,.inner-page) main dd,body.reference-clone.site-polished:is(.home-page,.inner-page) main li{font-size:16px;line-height:24px;color:#333}
+body.reference-clone.site-polished:is(.home-page,.inner-page) main h1,body.reference-clone.site-polished:is(.home-page,.inner-page) main h2{font:500 32px/42px 'Kanit',sans-serif;letter-spacing:0;color:#082b61;text-wrap:balance}
+body.reference-clone.site-polished:is(.home-page,.inner-page) main h3{font:600 22px/28px 'Kanit',sans-serif;letter-spacing:0;color:#082b61}
+body.reference-clone.site-polished:is(.home-page,.inner-page) main .eyebrow{font:400 22px/28px 'Poppins','Kanit',sans-serif;letter-spacing:0;text-transform:uppercase;color:#082b61;margin:0 0 10px;max-width:none}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .section{padding:100px 0;background:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .section-heading{display:block;text-align:center;margin:0 0 40px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .section-heading h2{margin:10px 0 0}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .section-heading>p{margin:20px auto 0;max-width:68ch}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .button,body.reference-clone.site-polished:is(.home-page,.inner-page) .text-link{font:500 16px/22px 'Kanit',sans-serif;box-shadow:none}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .button{min-height:48px;border-radius:100px;background:#082b61;border-color:#082b61;padding:12px 24px;color:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .button:hover{background:#06224d;transform:none}
+body.reference-clone.site-polished:is(.home-page,.inner-page) :focus-visible{outline:2px solid #296eac;outline-offset:4px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-header{inset:0 0 auto;width:100%;border:0;border-radius:0;background:#fff;box-shadow:0 2px 5px #0000001a}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-header .header-row{width:calc(100% - 48px);max-width:none;min-height:86px;padding:8px 0;gap:20px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-header .brand img{width:220px;height:70px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav{gap:8px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav a,body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav .services-toggle{font:500 16px/24px 'Poppins','Kanit',sans-serif;letter-spacing:0;color:#082b61}
+body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav>a,body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav .services-toggle{padding:8px 12px;min-height:44px;border-radius:5px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav>a[aria-current="page"],body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav .services-toggle[aria-current="page"]{background:#082b61;color:#fff;padding:8px 12px;min-height:44px;border-radius:5px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav .button{font-size:16px;border-radius:5px;min-height:48px;padding:10px 20px;color:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav>a:hover,body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav .services-toggle:hover{background:#082b61;color:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .services-submenu{min-width:220px;border:1px solid #d5dce5;border-radius:0;padding:8px;box-shadow:0 2px 5px #0000001a}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .services-submenu[hidden]{display:none!important}
+body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav .services-submenu a{padding:11px 12px;border-radius:0;font-size:14px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .menu-toggle{display:none}
+body.reference-clone.site-polished:is(.home-page,.inner-page):not(.home-page) main{padding-top:86px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-hero,body.reference-clone.site-polished:is(.home-page,.inner-page) .about-banner{position:relative;isolation:isolate;display:grid;place-items:center;height:500px;overflow:hidden;background:#082b61}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-hero-photo{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:center}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-hero:after{content:'';position:absolute;inset:0;z-index:-1;background:#0006}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-hero-content{padding:40px 0;text-align:center}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-hero-content>p{font:500 26px/32px 'Poppins','Kanit',sans-serif;color:#fff;margin:0;max-width:none;text-transform:uppercase}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-hero h1{font:500 34px/40px 'Kanit',sans-serif;color:#fff;margin:10px 0 0;letter-spacing:0}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero{min-height:100svh;background:#082b61}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero-grid.shell{min-height:100svh;justify-content:center;align-items:center;padding:140px 0 60px}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero-copy{max-width:960px;text-align:center}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero-brand{font:400 18px/24px 'Poppins','Kanit',sans-serif;letter-spacing:0;text-transform:uppercase;color:#fff;margin:0 0 10px}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero h1{font:600 32px/42px 'Kanit',sans-serif;letter-spacing:0;color:#fff;margin:10px auto 20px;max-width:26em}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero-copy .lead{font:400 22px/30px 'Kanit',sans-serif;color:#fff;max-width:100%;margin:0 auto 10px}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero-copy>p:not(.hero-brand):not(.lead){font:400 16px/22px 'Kanit',sans-serif;color:#fff;max-width:68ch;margin-inline:auto}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero .actions{justify-content:center;gap:20px;margin-top:24px}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero .text-link{color:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero .button{background:#fff;color:#082b61;border-color:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero-visual:after{background:#0006}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .hero-slides{position:absolute;inset:0}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0;transition:opacity 800ms ease;filter:none}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero-slide.is-active{opacity:1}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .hero-arrow{position:absolute;top:50%;z-index:3;display:grid;place-items:center;width:48px;height:64px;margin-top:-32px;padding:8px;border:0;background:transparent;color:#fff;cursor:pointer}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .hero-arrow svg{width:28px;fill:none;stroke:currentColor;stroke-width:2}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .menu-toggle svg{display:block;width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .hero-prev{left:12px}body.reference-clone.site-polished:is(.home-page,.inner-page) .hero-next{right:12px}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page #vision{padding:100px 0;background:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page #vision .home-vision-copy{max-width:1000px;text-align:center;margin:auto}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page #vision h2{font:600 32px/42px 'Poppins','Kanit',sans-serif;letter-spacing:0;margin:0 0 20px;color:#082b61}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page #vision .company-values-lead{font:500 22px/30px 'Kanit',sans-serif;color:#082b61;margin:0 auto 20px}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page #vision .home-vision-copy>p:last-child{font:400 16px/24px 'Kanit',sans-serif;color:#333;max-width:900px;margin:0 auto}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-services,body.reference-clone.site-polished:is(.home-page,.inner-page) #service-scope{padding:100px 0;background:#082b61}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-services>.shell{width:min(1320px,calc(100% - 80px));max-width:1320px}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-services .section-heading{display:block;text-align:center;margin-bottom:40px}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-services .section-heading h2,body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-services .eyebrow,body.reference-clone.site-polished:is(.home-page,.inner-page) #service-scope .section-heading h2{color:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-services .section-heading>p,body.reference-clone.site-polished:is(.home-page,.inner-page) #service-scope .section-heading>p{font-size:16px;color:#fff;margin:20px auto 0}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-service-grid,body.reference-clone.site-polished:is(.home-page,.inner-page) .service-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-service-card,body.reference-clone.site-polished:is(.home-page,.inner-page) .service-photo-card{border:0;border-radius:24px;box-shadow:0 2px 5px #0003;overflow:hidden;background:#06224d}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-service-card{text-decoration:none;transition:transform .2s ease;color:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-service-card:hover{transform:scale(1.05)}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-service-card>img,body.reference-clone.site-polished:is(.home-page,.inner-page) .service-photo-card>figure img{height:auto;aspect-ratio:3/2;object-fit:cover;filter:none}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-service-card-copy,body.reference-clone.site-polished:is(.home-page,.inner-page) .service-photo-copy{position:relative;padding:50px 30px 20px;background:#06224d}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-service-heading{display:block}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-service-icon{position:absolute;display:grid;place-items:center;width:70px;height:70px;left:30px;top:-30px;background:#fff;color:#082b61;border:5px solid #06224d;border-radius:100px}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-service-icon svg{width:40px;height:40px;fill:none;stroke:currentColor;stroke-width:1.4}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-service-card .eyebrow{font:600 22px/28px 'Poppins','Kanit',sans-serif;color:#fff;margin:10px 0}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-service-card h3,body.reference-clone.site-polished:is(.home-page,.inner-page) .service-photo-copy h3{font:500 22px/28px 'Kanit',sans-serif;color:#fff;margin:10px 0}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .service-photo-copy p,body.reference-clone.site-polished:is(.home-page,.inner-page) .service-photo-copy dd,body.reference-clone.site-polished:is(.home-page,.inner-page) .service-photo-copy dt{font-size:18px;line-height:24px;color:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-service-card .text-link,body.reference-clone.site-polished:is(.home-page,.inner-page) .service-photo-copy .text-link{display:inline-flex;border-radius:100px;background:#fff;color:#082b61;padding:5px 20px;text-decoration:none;font:500 16px/22px 'Kanit',sans-serif;margin-top:20px}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-all-services{margin-top:36px}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-values{padding:100px 0;background:#fff;color:#082b61;position:relative;isolation:isolate}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-values:before{content:'';position:absolute;inset:0;z-index:-1;background:url('assets/customer-background-lines.svg') center/cover;opacity:.5}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-values blockquote p{font:500 36px/46px 'Kanit',sans-serif;color:#082b61;letter-spacing:0;margin:20px 0}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-values blockquote p:before,body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-values blockquote p:after{color:#082b61}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .service-statistics{padding:40px 0 0;background:transparent;color:#082b61}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .service-statistics>.shell{width:100%;max-width:none}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .statistic-icon{width:72px;height:72px;background:#082b61;color:#fff;margin-bottom:20px}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .service-statistic dd{font:600 48px/58px 'Poppins','Kanit',sans-serif;color:#082b61;margin-bottom:12px}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .service-statistic dt{font:400 16px/24px 'Kanit',sans-serif;color:#082b61}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .customer-logo-section{padding:40px 0 100px;background:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .customer-logo-section .section-heading{display:block;text-align:center;margin-bottom:20px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .customer-logo-section .eyebrow{font:400 22px/28px 'Poppins','Kanit',sans-serif;margin-bottom:10px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .customer-logo-section h1,body.reference-clone.site-polished:is(.home-page,.inner-page) .customer-logo-section h2{font:600 32px/42px 'Kanit',sans-serif;margin:0;color:#082b61}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .three-row-logos{--logo-cell:218px;padding:40px 0;gap:0}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .logo-lane:nth-child(2){padding-left:109px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .three-row-logos .logo-track>.customer-logo{height:164px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .three-row-logos .customer-logo .logo-image{width:120px;height:120px;box-shadow:0 15px 15px -10px #082b6166;animation-duration:8s}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .three-row-logos .logo-lane:nth-child(3) .logo-image{width:140px;height:140px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .three-row-logos .customer-logo img{width:88%;height:70%;max-width:none;max-height:none;object-fit:contain;object-position:center}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .three-row-logos .logo-the-base img{width:74%;height:70%}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .three-row-logos .logo-alfredo img{width:88%;height:60%}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .three-row-logos .logo-ajinomoto img{width:72%;height:56%}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .three-row-logos .logo-dia-resibon .logo-image,body.reference-clone.site-polished:is(.home-page,.inner-page) .three-row-logos .logo-furuya .logo-image{width:140px;height:140px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-overview{padding:100px 0;background:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-heading{margin-bottom:40px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-heading h2{font:600 32px/42px 'Kanit',sans-serif;margin:10px 0 0}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .service-category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-card{background:#06224d;border-radius:24px;box-shadow:0 2px 5px #0003;transition:transform .2s ease}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-card:hover{transform:scale(1.05)}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-card:hover .catalog-card-photo img{transform:none}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-card-photo{height:auto;aspect-ratio:3/2}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-card-copy{padding:40px 30px 20px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-icon{width:70px;height:70px;top:-30px;left:30px;border:5px solid #06224d}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-icon svg{width:40px;height:40px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-card h3{font:600 22px/28px 'Poppins','Kanit',sans-serif;color:#fff;letter-spacing:0;margin:10px 0 0}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-card p{font:400 18px/24px 'Kanit',sans-serif;color:#fff;margin:10px 0 20px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-card-action{font:500 16px/22px 'Kanit',sans-serif;padding:5px 20px;min-height:32px;margin-top:auto}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail{padding:100px 0;background:#fff;border:0;background-image:url('assets/customer-background-lines.svg');background-size:cover;scroll-margin-top:86px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail-grid{gap:40px;grid-template-columns:1fr 1fr}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail figure{border-radius:24px;box-shadow:0 2px 5px #0003}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail figure img{height:auto;aspect-ratio:1;object-fit:cover}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail-copy{max-width:none;padding:0}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail-copy>.eyebrow{font:600 42px/48px 'Poppins','Kanit',sans-serif;letter-spacing:0;color:#082b61;margin:10px 0}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail-copy h2{font:600 18px/24px 'Kanit',sans-serif;color:#333;margin:10px 0}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail-description{font:400 16px/22px 'Kanit',sans-serif;margin:10px 0 30px;color:#333}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail-copy .actions{gap:20px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-back{font-size:14px;color:#333}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail.is-reversed,body.reference-clone.site-polished:is(.home-page,.inner-page).gardening-page .catalog-detail{background:#082b61;background-image:none}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail.is-reversed .eyebrow,body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail.is-reversed h2,body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail.is-reversed p,body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail.is-reversed .catalog-back,body.reference-clone.site-polished:is(.home-page,.inner-page).gardening-page .catalog-detail .eyebrow,body.reference-clone.site-polished:is(.home-page,.inner-page).gardening-page .catalog-detail h2,body.reference-clone.site-polished:is(.home-page,.inner-page).gardening-page .catalog-detail p,body.reference-clone.site-polished:is(.home-page,.inner-page).gardening-page .catalog-detail .catalog-back{color:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail.is-reversed .button,body.reference-clone.site-polished:is(.home-page,.inner-page).gardening-page .catalog-detail .button{background:#fff;color:#082b61;border-color:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail.is-reversed .text-link,body.reference-clone.site-polished:is(.home-page,.inner-page).gardening-page .catalog-detail .text-link{color:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail.is-reversed :focus-visible,body.reference-clone.site-polished:is(.home-page,.inner-page) .site-footer :focus-visible,body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero :focus-visible,body.reference-clone.site-polished:is(.home-page,.inner-page) #about-process :focus-visible{outline-color:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page).gardening-page .catalog-detail figure{order:2}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .company-introduction>.shell{width:min(1120px,calc(100% - 80px));max-width:1120px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .company-introduction h2{text-align:center;font:500 32px/42px 'Kanit',sans-serif;color:#333;max-width:840px;margin:0 auto 30px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .company-introduction p{font:400 16px/24px 'Kanit',sans-serif;max-width:none;margin-bottom:30px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .company-photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .company-photo-grid img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:24px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .facility-grid{gap:40px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .facility-grid h3,body.reference-clone.site-polished:is(.home-page,.inner-page) .steps h3{font-size:22px;line-height:28px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .steps p{font-size:16px;line-height:24px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) #about-process{background:#082b61;color:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page) #about-process h2,body.reference-clone.site-polished:is(.home-page,.inner-page) #about-process h3,body.reference-clone.site-polished:is(.home-page,.inner-page) #about-process p,body.reference-clone.site-polished:is(.home-page,.inner-page) #about-process .steps li:before{color:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page) #about-process .steps li{border-color:#ffffff4d}
+body.reference-clone.site-polished:is(.home-page,.inner-page) #faq{border:0;padding:60px 0;background:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page) #faq .faq-grid{gap:40px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) main summary{font:600 18px/24px 'Kanit',sans-serif;color:#082b61}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact,body.reference-clone.site-polished:is(.home-page,.inner-page) .contact-first{padding:60px 0;background:#fff;color:#333}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact>.shell,body.reference-clone.site-polished:is(.home-page,.inner-page) .contact-first>.shell{width:min(1320px,calc(100% - 80px));max-width:1320px;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact .section-heading{display:block;text-align:left;margin:0}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact .section-heading h2{font:500 32px/42px 'Kanit',sans-serif;color:#082b61}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact .eyebrow{color:#082b61}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact .section-heading>p{font:400 16px/24px 'Kanit',sans-serif;color:#333;max-width:none;margin:20px 0}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .inquiry-photo{display:block;width:100%;height:600px;object-fit:cover;object-position:center;border-radius:24px;box-shadow:0 2px 5px #0003;margin-top:24px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact-form{width:100%;max-width:600px;padding:40px;background:#fff;border:1px solid #d5dce5;border-radius:10px;margin:0!important;box-shadow:none}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact-form .form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:0}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact-form label{font:500 16px/24px 'Kanit',sans-serif;color:#082b61;margin-bottom:20px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact-form .form-row label{display:flex;flex-direction:column;justify-content:space-between;gap:8px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact-form input,body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact-form select,body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact-form textarea{font:400 16px/24px 'Kanit',sans-serif;min-height:48px;padding:11px 12px;margin-top:8px;color:#082b61;border-radius:6px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact-form .form-row input,body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact-form .form-row select{margin-top:0}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact-form .form-help,body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact-form .form-status{font:400 14px/20px 'Kanit',sans-serif;color:#333}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact-form>.button{font-size:16px;line-height:24px;min-height:50px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .contact-copy h1{font:500 34px/40px 'Kanit',sans-serif;color:#082b61}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .contact-copy .eyebrow,body.reference-clone.site-polished:is(.home-page,.inner-page) .contact-copy .inner-lead{color:#082b61}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .contact-copy .inner-lead{font-size:22px;line-height:30px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .contact-copy p,body.reference-clone.site-polished:is(.home-page,.inner-page) .contact-copy small,body.reference-clone.site-polished:is(.home-page,.inner-page) .contact-copy .business-address p{color:#333}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .contact-copy address strong{font-size:22px;line-height:28px;color:#082b61}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .contact-copy address a{border-color:#d5dce5;color:#082b61}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-footer{padding:40px 0 20px;background:#082b61;color:#fff;border:0}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-footer>.shell{width:min(1320px,calc(100% - 80px));max-width:1320px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-footer-grid{grid-template-columns:1.25fr .75fr .9fr 1.1fr;gap:40px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-footer-brand{width:280px;max-width:100%;margin:0 0 20px;background:none;padding:0;border:0}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-footer-brand img{content:url('assets/ss-super-services-brand/ss-footer-logo-white.svg');width:100%;height:auto}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .footer-description,body.reference-clone.site-polished:is(.home-page,.inner-page) .footer-address{font:400 14px/20px 'Kanit',sans-serif;color:#fff;margin-bottom:16px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-footer .footer-column{gap:10px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-footer .footer-column h2{font:500 18px/24px 'Poppins','Kanit',sans-serif;color:#91accb;margin:10px 0}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-footer .footer-column a{font:400 14px/20px 'Poppins','Kanit',sans-serif;color:#fff}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-footer .footer-contact a span{font-size:14px;color:#91accb;margin-bottom:4px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .footer-bottom{font:400 14px/20px 'Kanit',sans-serif;color:#fff;border:0;padding-top:0;margin-top:20px;text-align:center}
+@media(min-width:1920px){body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero h1{font-size:42px;line-height:52px}body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero-brand{font-size:20px;line-height:26px}body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero-copy>p:not(.hero-brand):not(.lead){font-size:18px;line-height:24px}}
+@media(max-width:991px){
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .shell,body.reference-clone.site-polished:is(.home-page,.inner-page) main>.section>.shell,body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail>.shell,body.reference-clone.site-polished:is(.home-page,.inner-page) .service-feature>.shell,body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact>.shell,body.reference-clone.site-polished:is(.home-page,.inner-page) .contact-first>.shell,body.reference-clone.site-polished:is(.home-page,.inner-page) .site-footer>.shell,body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-services>.shell{width:calc(100% - 40px)}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .site-header .header-row{width:calc(100% - 40px);min-height:78px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .site-header .brand img{width:190px;height:62px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .menu-toggle{display:block;border-radius:0;background:#fff;border:0;min-height:44px;padding:10px 14px;color:#082b61;font-size:16px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav{display:none;position:absolute;top:100%;left:0;width:100%;max-height:calc(100svh - 78px);overflow-y:auto;padding:20px;background:#fff;box-shadow:0 8px 50px #0000000d;border:0}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav.open{display:flex;flex-direction:column;gap:20px;align-items:stretch}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav>a,body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav .services-toggle{font-size:16px;line-height:24px;padding:12px 14px;min-height:50px;border-radius:5px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav .nav-dropdown{display:block;width:100%}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav .services-toggle{width:100%;justify-content:space-between;min-height:44px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav .services-submenu{position:static;width:100%;min-width:0;max-height:none;margin:0;padding:0 0 0 14px;box-shadow:none;border:0}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav .services-submenu a{white-space:normal}
+ body.reference-clone.site-polished:is(.home-page,.inner-page):not(.home-page) main{padding-top:78px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-hero{height:400px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-hero-content>p{font-size:18px;line-height:24px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-hero h1{font-size:26px;line-height:32px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) main h2{font-size:28px;line-height:34px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .section,body.reference-clone.site-polished:is(.home-page,.inner-page).home-page #vision,body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-services,body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-values,body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-overview{padding:60px 0}
+ body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero h1{font-size:28px;line-height:32px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page).home-page #vision h2{font-size:28px;line-height:34px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-values blockquote p{font-size:24px;line-height:30px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-heading h2,body.reference-clone.site-polished:is(.home-page,.inner-page) .customer-logo-section h1,body.reference-clone.site-polished:is(.home-page,.inner-page) .customer-logo-section h2{font-size:24px;line-height:30px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-card p{font-size:14px;line-height:20px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail-copy>.eyebrow{font-size:32px;line-height:38px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail-copy h2{font-size:16px;line-height:22px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail{padding:60px 0}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact>.shell,body.reference-clone.site-polished:is(.home-page,.inner-page) .contact-layout{grid-template-columns:1fr;max-width:680px;gap:40px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact-form{margin-inline:auto!important}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .inquiry-photo{height:500px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .site-footer-grid{grid-template-columns:1.3fr 1fr;gap:32px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .footer-identity{grid-row:span 2}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .footer-contact{grid-column:2}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .site-footer .footer-column h2{font-size:16px}
+}
+@media(max-width:767px){
+ body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-service-grid,body.reference-clone.site-polished:is(.home-page,.inner-page) .service-grid,body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail-grid,body.reference-clone.site-polished:is(.home-page,.inner-page) .company-photo-grid,body.reference-clone.site-polished:is(.home-page,.inner-page) .faq-grid{grid-template-columns:1fr;gap:20px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail.is-reversed figure,body.reference-clone.site-polished:is(.home-page,.inner-page).gardening-page .catalog-detail figure{order:0}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-detail figure img{aspect-ratio:1}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .company-introduction>.shell{width:calc(100% - 40px)}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .company-introduction h2{font-size:28px;line-height:34px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .company-introduction p{font-size:14px;line-height:20px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero-copy .lead{font-size:18px;line-height:24px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-values blockquote p{font-size:22px;line-height:32px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page).home-page #vision .company-values-lead{font-size:18px;line-height:26px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact>.shell,body.reference-clone.site-polished:is(.home-page,.inner-page) .contact-first>.shell{grid-template-columns:1fr;gap:32px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .inquiry-photo{height:auto}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact-form{padding:28px 22px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact-form .form-row{grid-template-columns:1fr;gap:0}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .site-footer-grid{grid-template-columns:1fr 1fr;gap:24px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .footer-identity{grid-column:1/-1;grid-row:auto}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .footer-contact{grid-column:1/-1}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .three-row-logos{--logo-cell:160px;padding:30px 0}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .logo-lane:nth-child(2){padding-left:80px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .three-row-logos .logo-track>.customer-logo{height:140px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .three-row-logos .customer-logo .logo-image{width:100px;height:100px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .three-row-logos .logo-lane:nth-child(3) .logo-image,body.reference-clone.site-polished:is(.home-page,.inner-page) .three-row-logos .logo-dia-resibon .logo-image,body.reference-clone.site-polished:is(.home-page,.inner-page) .three-row-logos .logo-furuya .logo-image{width:120px;height:120px}
+}
+@media(max-width:479px){
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-hero{height:300px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-hero-content>p{font-size:14px;line-height:20px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-hero h1{font-size:22px;line-height:28px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero h1{font-size:20px;line-height:26px;font-weight:500}
+ body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero-brand{font-size:14px;line-height:20px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero-copy .lead,body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero-copy>p:not(.hero-brand):not(.lead){font-size:16px;line-height:22px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero-copy{padding-inline:20px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .hero-grid.shell{padding:110px 0 40px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .hero-arrow{width:36px;padding:5px}body.reference-clone.site-polished:is(.home-page,.inner-page) .hero-prev{left:2px}body.reference-clone.site-polished:is(.home-page,.inner-page) .hero-next{right:2px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .hero-arrow svg{width:20px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .eyebrow,body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-heading .eyebrow,body.reference-clone.site-polished:is(.home-page,.inner-page) .customer-logo-section .eyebrow{font-size:14px;line-height:20px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-heading h2,body.reference-clone.site-polished:is(.home-page,.inner-page) .customer-logo-section h1,body.reference-clone.site-polished:is(.home-page,.inner-page) .customer-logo-section h2{font-size:18px;line-height:24px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-grid{grid-template-columns:1fr}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-card h3{font-size:20px;line-height:26px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-card-copy{padding-inline:20px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-icon{left:20px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-service-card-copy{padding-inline:20px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-service-icon{left:20px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-values blockquote p{font-size:20px;line-height:26px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .service-statistics-grid{grid-template-columns:1fr 1fr;gap:32px 20px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .service-statistic dd{font-size:40px;line-height:48px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .statistic-icon{width:60px;height:60px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .company-introduction h2{font-size:22px;line-height:28px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact .section-heading h2{font-size:28px;line-height:34px}
+}
+@media(prefers-reduced-motion:reduce){body.reference-clone.site-polished:is(.home-page,.inner-page) .hero-slide{transition:none}body.reference-clone.site-polished:is(.home-page,.inner-page) .three-row-logos .logo-image,body.reference-clone.site-polished:is(.home-page,.inner-page) .three-row-logos .logo-track{animation:none!important}}
+
+@media(min-width:992px) and (max-width:1199px){
+ body.reference-clone.site-polished:is(.home-page,.inner-page) #site-nav>a{font-size:16px;line-height:24px;padding:8px 10px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .site-header .brand img{width:200px;height:70px}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .site-header .header-row{gap:16px}
+}
+
+body.reference-clone.site-polished.inner-page .facility-photo-grid article{border:0;padding:0}
+body.reference-clone.site-polished.inner-page .facility-photo{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:24px;margin:0 0 24px}
+body.reference-clone.site-polished.inner-page .facility-photo-grid h3{text-align:center;margin-bottom:16px}
+body.reference-clone.site-polished.inner-page .facility-photo-grid p{color:#516781;line-height:1.7}
+
+body.reference-clone.site-polished.inner-page .facility-photo-frame{overflow:hidden;border-radius:24px;margin-bottom:24px}
+body.reference-clone.site-polished.inner-page .facility-photo-frame .facility-photo{margin:0;transition:transform .65s cubic-bezier(.2,.65,.3,1)}
+@media(hover:hover) and (pointer:fine){body.reference-clone.site-polished.inner-page .facility-photo-frame:hover .facility-photo{transform:scale(1.06)}}
+@media(prefers-reduced-motion:reduce){body.reference-clone.site-polished.inner-page .facility-photo-frame .facility-photo{transition:none;transform:none}}
+
+/* Shared hover rhythm for service, information and photo cards. */
+body.reference-clone.site-polished:is(.home-page,.inner-page) :is(.home-service-card,.catalog-card,.service-photo-card,.facility-grid article,.steps li,.faq details,.coverage-note,.catalog-detail-copy,.contact-copy,.service-statistic){transition:transform .65s cubic-bezier(.2,.65,.3,1),box-shadow .65s ease}
+body.reference-clone.site-polished:is(.home-page,.inner-page) :is(.catalog-detail figure,.service-photo-card figure){overflow:hidden;border-radius:24px}
+body.reference-clone.site-polished:is(.home-page,.inner-page) :is(.catalog-detail figure img,.service-photo-card figure img,.company-photo-grid img,.inquiry-photo,.catalog-card-photo img){transition:transform .65s cubic-bezier(.2,.65,.3,1)}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact-form{transition:box-shadow .65s ease,border-color .65s ease}
+@media(hover:hover) and (pointer:fine){
+ body.reference-clone.site-polished:is(.home-page,.inner-page) :is(.home-service-card,.catalog-card,.service-photo-card,.facility-grid article,.steps li,.faq details,.coverage-note,.catalog-detail-copy,.contact-copy,.service-statistic):hover{transform:translateY(-10px) scale(1.025)}
+ body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-service-card:hover{transform:translateY(-10px) scale(1.025)}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .catalog-card:hover{transform:translateY(-10px) scale(1.025)}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) :is(.catalog-detail figure:hover img,.service-photo-card:hover figure img,.company-photo-grid img:hover,.inquiry-photo:hover,.catalog-card:hover .catalog-card-photo img){transform:scale(1.04)}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact-form:hover{border-color:#91accb;box-shadow:0 8px 24px #082b6114}
+}
+body.reference-clone.site-polished:is(.home-page,.inner-page) .site-contact-form:focus-within{border-color:#91accb;box-shadow:0 8px 24px #082b6114}
+@media(prefers-reduced-motion:reduce){
+ body.reference-clone.site-polished:is(.home-page,.inner-page) :is(.home-service-card,.catalog-card,.service-photo-card,.facility-grid article,.steps li,.faq details,.coverage-note,.catalog-detail-copy,.contact-copy,.service-statistic,.catalog-detail figure img,.service-photo-card figure img,.company-photo-grid img,.inquiry-photo,.catalog-card-photo img,.site-contact-form){transition:none!important;transform:none!important}
+}
+
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-service-card{transition:transform .65s cubic-bezier(.2,.65,.3,1);overflow:hidden}
+body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-service-card>img{transition:transform .65s cubic-bezier(.2,.65,.3,1)}
+@media(hover:hover) and (pointer:fine){body.reference-clone.site-polished:is(.home-page,.inner-page).home-page .home-service-card:hover>img{transform:scale(1.04)}}
+@media(prefers-reduced-motion:reduce){body.reference-clone.site-polished:is(.home-page,.inner-page).home-page :is(.home-service-card,.home-service-card>img){transition:none!important;transform:none!important}}
+
+@media(hover:hover) and (pointer:fine){
+ body.reference-clone.site-polished:is(.home-page,.inner-page) :is(.home-service-card,.catalog-card,.service-photo-card):hover{box-shadow:0 18px 32px #082b6129}
+ body.reference-clone.site-polished:is(.home-page,.inner-page) :is(.catalog-detail-copy,.contact-copy,.coverage-note,.steps li,.facility-grid article,.service-statistic,.faq details){transform-origin:center center}
+}

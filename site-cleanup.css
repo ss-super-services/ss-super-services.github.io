@@ -1,0 +1,75 @@
+/* Shared finish for all five public pages. */
+body a,
+body a * {
+  text-decoration: none !important;
+}
+
+#site-nav > a:not(.button)::after {
+  display: none !important;
+  content: none !important;
+}
+
+
+
+.customer-logo-grid {
+  display: block;
+  width: 100%;
+  margin: 28px 0 0;
+  overflow: hidden;
+  scroll-behavior: auto;
+}
+
+.customer-logo-grid > .customer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+}
+
+.customer-logo .logo-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 88px;
+}
+
+.customer-logo img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 78px;
+  object-fit: contain;
+}
+
+@media (max-width: 780px) {
+  .carousel-controls { display: none; }
+  .customer-logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+    align-items: center;
+    gap: 28px clamp(16px, 3vw, 40px);
+    overflow: visible;
+  }
+  #customer-logos .customer-logo img { max-width: 100%; }
+  .customer-logo-grid:not(.three-row-logos) .logo-track { display: contents; animation: none !important; transform: none !important; }
+  .customer-logo-grid:not(.three-row-logos) .logo-track > .customer-logo[aria-hidden="true"] { display: none; }
+}
+
+@media (max-width: 640px) {
+  .customer-logo-grid {
+    overflow: hidden;
+  }
+
+  .customer-logo-grid > .customer-logo {
+    height: 98px;
+  }
+
+  .customer-logo .logo-image {
+    height: 76px;
+  }
+}

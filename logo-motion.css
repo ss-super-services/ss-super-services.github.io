@@ -1,0 +1,8 @@
+/* Keep the requested continuous rail in reduced-motion mode, at a gentler speed.
+   Decorative vertical floating is still disabled by the existing motion rules. */
+@media (prefers-reduced-motion: reduce) {
+  body.reference-clone.site-polished:is(.home-page,.customer-gallery-page) #customer-logos.three-row-logos .logo-lane .logo-track {
+    animation:logo-drift var(--rail-duration,120s) linear infinite normal!important;
+    animation-play-state:running!important;
+  }
+}

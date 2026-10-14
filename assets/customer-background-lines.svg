@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+<defs><path id="curve" d="M-200 700C360 850 850 250 1800 50"/></defs>
+<g stroke="#082b61" stroke-opacity=".04" stroke-width="1.5">
+<use href="#curve" transform="translate(0 -380)"/>
+<use href="#curve" transform="translate(0 -190)"/>
+<use href="#curve"/>
+<use href="#curve" transform="translate(0 190)"/>
+<use href="#curve" transform="translate(0 380)"/>
+<use href="#curve" transform="translate(0 570)"/>
+</g>
+<use href="#curve" transform="translate(0 285)" stroke="#082b61" stroke-opacity=".012" stroke-width="80"/>
+</svg>

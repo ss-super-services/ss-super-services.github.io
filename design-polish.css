@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap');
+body.site-polished{font-family:'Kanit',sans-serif;--navy:#082b61;--ink:#082b61;--muted:#475568;--line:#d5dce5}
+body.site-polished h1,body.site-polished h2,body.site-polished h3,body.site-polished button,body.site-polished input,body.site-polished select,body.site-polished textarea{font-family:'Kanit',sans-serif}
+body.site-polished .shell{width:calc(100% - 64px);max-width:none}
+body.site-polished .site-header{position:fixed;inset:0 0 auto;width:100%;transform:none;border:0;border-radius:0;background:#fff;z-index:50}
+body.site-polished .site-header .header-row{width:calc(100% - 64px);max-width:none;margin:auto;min-height:78px;padding:7px 0;gap:24px}
+body.site-polished .site-header .brand img{content:url('assets/ss-super-services-brand/ss-header-logo.svg');width:200px;height:64px;object-fit:contain}
+body.site-polished #site-nav{gap:24px}
+body.site-polished #site-nav a,body.site-polished .services-toggle{font:500 14px/1.5 'Kanit',sans-serif}
+body.site-polished #site-nav>a[aria-current="page"]{background:#082b61;color:#fff;padding:8px 12px;border-radius:4px}
+body.site-polished .services-toggle[aria-current="page"]{background:#082b61;color:#fff;padding:8px 12px;border-radius:4px}
+body.site-polished #site-nav .button{font-size:14px;border-radius:5px;min-height:44px;padding:10px 20px}
+body.site-polished:not(.home-page) main{padding-top:78px}
+body.site-polished:not(.home-page) h1,body.site-polished:not(.home-page) h2,body.site-polished:not(.home-page) h3{font-weight:500}
+body.site-polished:not(.home-page) .section{padding-block:80px}
+body.site-polished:not(.home-page) .image-provenance-note{display:none}
+body.site-polished:not(.home-page) .site-contact-form{width:min(100%,600px);margin:32px auto 0;padding:40px;border-radius:10px;border:1px solid #d5dce5;background:#fff}
+body.site-polished:not(.home-page) .site-contact-form .form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+body.site-polished:not(.home-page) .site-contact-form label{font-size:14px;line-height:1.6;margin-bottom:20px}
+body.site-polished:not(.home-page) .site-contact-form input,body.site-polished:not(.home-page) .site-contact-form select,body.site-polished:not(.home-page) .site-contact-form textarea{font:400 16px/1.6 'Kanit',sans-serif;padding:11px 12px;min-height:48px;border-radius:6px}
+body.site-polished:not(.home-page) .site-contact-form textarea{min-height:110px}
+body.site-polished:not(.home-page) .site-contact-form>.button{border-radius:50px;min-height:50px;line-height:1.6;white-space:normal}
+@media(max-width:900px){body.site-polished #site-nav .nav-dropdown{display:block;width:100%}body.site-polished #site-nav .services-toggle{width:100%;min-height:44px;justify-content:space-between;text-align:left}body.site-polished #site-nav .services-submenu{position:static;width:100%;min-width:0;margin:0 0 4px;padding:2px 0 2px 14px;border-right:0;border-left:0}body.site-polished #site-nav .services-submenu a{white-space:normal;padding:11px 12px}}
+@media(max-width:700px){body.site-polished:not(.home-page) .site-contact-form{padding:28px 22px}body.site-polished:not(.home-page) .site-contact-form .form-row{grid-template-columns:1fr;gap:0}}
+body.home-page .hero-copy{max-width:760px}
+body.home-page .home-vision{padding:96px 0}
+body.home-page .home-services{padding:72px 0 80px;background:#082b61}
+body.home-page .home-services .section-heading{margin-bottom:36px;gap:32px}
+body.home-page .home-services .section-heading h2,body.home-page .home-services .section-heading .eyebrow{color:#fff}
+body.home-page .home-services .section-heading>p{color:#d1dfea;font-size:17px}
+body.home-page .home-service-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+body.home-page .home-service-card,body.home-page .home-service-card:nth-child(2){display:flex;flex-direction:column;height:auto;min-height:0;border:0;border-radius:8px;background:#fff}
+body.home-page .home-service-card>img,body.home-page .home-service-card:nth-child(2)>img{order:0;flex:none;width:100%;height:clamp(260px,25vw,460px);min-height:0;object-fit:cover;object-position:center 45%;filter:saturate(.94) contrast(1.02)}
+body.home-page .home-service-card-copy{padding:32px 36px;flex:1;justify-content:flex-start}
+body.home-page .home-service-card h3{font-size:clamp(30px,2.7vw,44px);margin-bottom:16px}
+body.home-page .home-service-card .eyebrow{margin-bottom:14px}
+body.home-page .home-service-card .text-link{font-size:15px;margin-top:auto;padding-top:12px}
+body.home-page .home-values{padding:96px 0}
+body.home-page .site-contact{padding:96px 0}
+body.home-page .site-contact>.shell{width:min(1180px,calc(100% - 96px));max-width:1180px;gap:100px}
+@media(max-width:1100px){body.home-page .site-contact>.shell{gap:50px}}
+@media(max-width:700px){body.home-page .site-contact>.shell{width:calc(100% - 40px);gap:36px}}
+body.site-polished .site-footer{padding:56px 0 24px;background:#fff;color:#082b61;border-top:1px solid #d5dce5}
+body.site-polished .site-footer>.shell{width:calc(100% - 64px);max-width:none}
+body.site-polished .site-footer-grid{display:grid;grid-template-columns:minmax(240px,1.25fr) minmax(130px,.75fr) minmax(160px,.9fr) minmax(230px,1.1fr);gap:48px;align-items:start}
+body.site-polished .footer-identity{grid-column:auto;grid-row:auto}
+body.site-polished .site-footer-brand{display:block;width:280px;max-width:100%;padding:0;margin:0 0 20px;border:0;background:none;border-radius:0}
+body.site-polished .site-footer-brand img{display:block;width:100%;height:auto}
+body.site-polished .footer-description,body.site-polished .footer-address{font-size:14px;line-height:1.7;color:#475568;max-width:32ch;margin:0 0 20px}
+body.site-polished .footer-address{display:block;font-style:normal}
+body.site-polished .footer-column{position:static;display:flex;flex-direction:column;align-items:flex-start;gap:12px;width:auto;padding:0;border:0;background:none;min-width:0}
+body.site-polished .footer-column h2{font:500 20px/1.4 'Kanit',sans-serif;color:#082b61;margin:8px 0 10px}
+body.site-polished .footer-column a{display:block;color:#082b61;font:400 14px/1.7 'Kanit',sans-serif;text-decoration:none;padding:0;overflow-wrap:anywhere}
+body.site-polished .footer-column a:hover{text-decoration:underline;text-underline-offset:4px}
+body.site-polished .footer-contact{grid-column:auto;gap:18px}
+body.site-polished .footer-contact a span{display:block;color:#475568;font-size:12px;margin-bottom:3px}
+body.site-polished .footer-bottom{margin-top:36px;padding-top:20px;border-top:1px solid #d5dce5;font:400 12px/1.7 'Kanit',sans-serif;text-align:center;color:#475568}
+@media(max-width:1100px){body.site-polished #site-nav{gap:16px}body.site-polished .site-footer-grid{grid-template-columns:1.2fr .7fr .9fr 1.1fr;gap:24px}}
+@media(max-width:900px){body.site-polished .site-header .header-row{width:calc(100% - 32px);min-height:70px}body.site-polished .site-header .brand img{width:172px;height:56px}body.site-polished .menu-toggle{display:block;min-height:44px;border:1px solid #c5cbd2;border-radius:5px;padding:8px 16px;background:#fff;color:#082b61}body.site-polished #site-nav{display:none;position:absolute;top:100%;left:0;width:100%;padding:16px;border:0;border-bottom:1px solid #d5dce5;border-radius:0;background:#fff}body.site-polished #site-nav.open{display:flex;flex-direction:column;align-items:stretch;gap:8px}body.site-polished #site-nav a,body.site-polished .services-toggle{font-size:15px;padding:12px}body.site-polished:not(.home-page) main{padding-top:70px}body.site-polished .site-footer-grid{grid-template-columns:1.3fr 1fr;gap:32px}body.site-polished .footer-identity{grid-row:span 2}body.site-polished .footer-contact{grid-column:2}}
+@media(max-width:700px){body.site-polished .shell,body.home-page .home-services>.shell,body.site-polished .site-footer>.shell{width:calc(100% - 32px)}body.home-page .home-vision{padding:64px 0}body.home-page .home-services{padding:56px 0}body.home-page .home-services .section-heading{gap:16px;margin-bottom:28px}body.home-page .home-service-grid{grid-template-columns:1fr;gap:28px}body.home-page .home-service-card>img{height:clamp(240px,68vw,360px)}body.home-page .home-service-card-copy{padding:28px 24px}body.home-page .home-service-card h3{font-size:32px}body.home-page .home-values,body.home-page .site-contact{padding:64px 0}body.home-page .site-contact>.shell{gap:32px}body.site-polished:not(.home-page) .section{padding-block:56px}body.site-polished .site-footer{padding:40px 0 24px}body.site-polished .site-footer-grid{grid-template-columns:1fr 1fr;gap:28px 20px}body.site-polished .footer-identity{grid-column:1/-1;grid-row:auto}body.site-polished .footer-contact{grid-column:1/-1}}

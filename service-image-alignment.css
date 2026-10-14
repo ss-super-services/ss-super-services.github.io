@@ -1,0 +1,115 @@
+/* Uniform original frames: every overview image is 3:2, every detail image is square.
+   Individual source windows center people without changing card or figure dimensions. */
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] .catalog-card[href="#floor-clean"] {
+  --photo-width: 110.81632653%;
+  --photo-height: 221.63265306%;
+  --photo-left: -10.20408163%;
+  --photo-top: -61.22448980%;
+}
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] #floor-clean {
+  --photo-width: 114.92063492%;
+  --photo-height: 153.22751323%;
+  --photo-left: -13.75661376%;
+  --photo-top: -37.03703704%;
+}
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] .catalog-card[href="#first-clean"] {
+  --photo-width: 100.00000000%;
+  --photo-height: 112.50000000%;
+  --photo-left: 0.00000000%;
+  --photo-top: -8.28729282%;
+}
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] #first-clean {
+  --photo-width: 133.33333333%;
+  --photo-height: 100.00000000%;
+  --photo-left: -16.66666667%;
+  --photo-top: 0.00000000%;
+}
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] .catalog-card[href="#carpet-cleaning"] {
+  --photo-width: 150.00000000%;
+  --photo-height: 150.00000000%;
+  --photo-left: -10.54687500%;
+  --photo-top: 0.00000000%;
+}
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] #carpet-cleaning {
+  --photo-width: 150.00000000%;
+  --photo-height: 100.00000000%;
+  --photo-left: -10.54687500%;
+  --photo-top: 0.00000000%;
+}
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] .catalog-card[href="#gardening"] {
+  --photo-width: 144.80000000%;
+  --photo-height: 289.60000000%;
+  --photo-left: -41.33333333%;
+  --photo-top: -56.00000000%;
+}
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] #gardening {
+  --photo-width: 134.07407407%;
+  --photo-height: 178.76543210%;
+  --photo-left: -33.33333333%;
+  --photo-top: -37.03703704%;
+}
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] .catalog-card[href="#facilities-services"] {
+  --photo-width: 100.00000000%;
+  --photo-height: 112.50000000%;
+  --photo-left: 0.00000000%;
+  --photo-top: -10.35911602%;
+}
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] #facilities-services {
+  --photo-width: 133.33333333%;
+  --photo-height: 100.00000000%;
+  --photo-left: -16.66666667%;
+  --photo-top: 0.00000000%;
+}
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] .catalog-card[href="#cleaning-supplies"] {
+  --photo-width: 100.00000000%;
+  --photo-height: 100.00000000%;
+  --photo-left: 0.00000000%;
+  --photo-top: 0.00000000%;
+}
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] #cleaning-supplies {
+  --photo-width: 150.00000000%;
+  --photo-height: 100.00000000%;
+  --photo-left: -25.00000000%;
+  --photo-top: 0.00000000%;
+}
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] .catalog-card {
+  align-self: stretch;
+}
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] .catalog-card-photo,
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] .catalog-detail figure {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] .catalog-card-photo { aspect-ratio: 3 / 2; }
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] .catalog-detail figure { aspect-ratio: 1; }
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] .catalog-card-photo picture,
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] .catalog-detail figure picture {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] .catalog-card-photo img,
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] .catalog-detail figure img {
+  position: absolute;
+  inset: auto;
+  left: var(--photo-left, 0%);
+  top: var(--photo-top, 0%);
+  display: block;
+  width: var(--photo-width, 100%);
+  height: var(--photo-height, 100%);
+  max-width: none;
+  margin: 0;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
+  transform: none;
+}
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] .catalog-card:hover .catalog-card-photo img,
+body.reference-clone.site-polished.catalog-page [data-page="services.html"] .catalog-detail figure:hover img { transform: none; }

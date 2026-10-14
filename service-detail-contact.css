@@ -1,0 +1,92 @@
+/* Services detail content only: preserve all existing photo frames and crops. */
+body.services-page.reference-clone.site-polished .catalog-detail,
+body.services-page.reference-clone.site-polished .catalog-detail :is(.catalog-detail-grid,figure,picture,img,.catalog-detail-copy,h2,p,.actions) {
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
+}
+body.services-page.reference-clone.site-polished .catalog-detail .catalog-detail-description {
+  line-height: 1.85;
+  text-wrap: pretty;
+}
+body.services-page.reference-clone.site-polished .catalog-detail .actions .button {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+body.services-page.reference-clone.site-polished .catalog-detail .actions .service-phone-button {
+  border: 1px solid #082b61;
+  background: #fff;
+  color: #082b61;
+}
+body.services-page.reference-clone.site-polished .catalog-detail.is-reversed .actions .service-phone-button {
+  border-color: #fff;
+  color: #082b61;
+}
+@media (hover: hover) and (pointer: fine) {
+  body.services-page.reference-clone.site-polished .catalog-detail .actions .button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px #082b6126;
+  }
+}
+body.services-page .catalog-detail .actions .button:focus-visible,
+body.services-page .service-phone-dialog :focus-visible {
+  outline: 3px solid #477cb8;
+  outline-offset: 4px;
+}
+body.services-page .service-phone-dialog {
+  width: min(440px, calc(100% - 40px));
+  max-height: calc(100dvh - 40px);
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 40px 28px 32px;
+  border: 1px solid #d5dce5;
+  border-radius: 24px;
+  color: #082b61;
+  background: #fff;
+  box-shadow: 0 24px 80px #082b6133;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+}
+body.services-page .service-phone-dialog::backdrop { background: #061c3db3; }
+body.services-page .service-phone-dialog .service-phone-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #082b61;
+  font: 30px/1 sans-serif;
+  cursor: pointer;
+}
+body.services-page .service-phone-dialog .service-phone-brand { margin: 0 0 8px; color: #082b61; font-size: 15px; }
+body.services-page .service-phone-dialog h2 { margin: 0 0 12px; color: #082b61; font-size: 28px; }
+body.services-page .service-phone-dialog #service-phone-description { margin: 0 0 24px; color: #475568; font-size: 16px; }
+body.services-page .service-phone-dialog .service-phone-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 54px;
+  padding: 10px 16px;
+  border: 1px solid #082b61;
+  border-radius: 100px;
+  color: #082b61;
+  text-decoration: none;
+  font-size: clamp(20px, 6vw, 26px);
+  font-weight: 500;
+}
+@media (prefers-reduced-motion: reduce) {
+  body.services-page.reference-clone.site-polished .catalog-detail .actions .button {
+    transition: none;
+    transform: none !important;
+  }
+}
+
+body.services-page .service-phone-icon { width: 21px; height: 21px; flex-shrink: 0; color: #082b61; }

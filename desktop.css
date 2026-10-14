@@ -1,0 +1,156 @@
+/* Notebook / desktop composition. The image reaches the viewport edge;
+   text keeps its own readable measure. Mobile retains the existing layout. */
+:root { --ease-arrive: cubic-bezier(.16,1,.3,1); }
+body { scrollbar-color: #829bb2 #f0f6fd; }
+.button { transition: background-color 180ms ease, color 180ms ease, transform 130ms var(--ease-arrive); }
+.button:active:not(:disabled) { transform: scale(.98); }
+.button:focus-visible { background: #1a477a; }
+.button svg { width: 20px; }
+.button .arrow, .button [aria-hidden="true"] { transition: transform 220ms var(--ease-arrive); }
+.button:hover .arrow, .button:focus-visible .arrow,
+.button:hover [aria-hidden="true"], .button:focus-visible [aria-hidden="true"] { transform: translateX(4px); }
+.text-link, .phone, nav a { transition: color 160ms ease, background-color 160ms ease; }
+.service { transition: background-color 220ms ease; }
+.service:hover, .service:focus-within { background: #e3edf5; }
+.facility-grid article { transition: border-color 220ms ease; }
+.facility-grid article:hover { border-color: var(--blue); }
+summary { transition: color 160ms ease; }
+summary:hover, details[open] summary { color: var(--blue); }
+summary:after { transition: transform 180ms var(--ease-arrive); }
+details[open] summary:after { transform: rotate(180deg); }
+input, select, textarea { transition: border-color 160ms ease, background-color 160ms ease; }
+input:focus, select:focus, textarea:focus { border-color: var(--blue); background: #fbfdff; }
+.hero-media, .service-media { margin: 0; position: relative; overflow: hidden; }
+.hero-media picture, .hero-media img { display: block; width: 100%; height: 100%; }
+.hero-media picture { position: absolute; inset: 0; }
+.hero-media img { object-fit: cover; object-position: center; }
+.image-note { position: absolute; bottom: 0; left: 0; right: 0; padding: 12px 24px; margin: 0; background: rgba(16,43,80,.94); color: #fff; font-size: 12px; line-height: 1.6; }
+.service-media { aspect-ratio: 16/9; margin: -36px -36px 30px; background: var(--pale); }
+.service-media picture, .service-media img { width: 100%; height: 100%; display: block; }
+.service-media img { object-fit: cover; }
+.steps li:focus-within:before, .steps li:hover:before { color: var(--navy); }
+.customer-section { background: #f8fafc; }
+.customer-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); column-gap: 48px; }
+.customer-list li { border-top: 1px solid var(--line); padding: 24px 0; font-size: 18px; font-weight: 500; line-height: 1.8; overflow-wrap: anywhere; }
+.customer-section .text-link { margin-top: 24px; }
+@media (min-width: 781px) {
+  .button { transition: background-color 220ms ease, color 220ms ease, transform 180ms var(--ease-arrive); }
+  .button:hover, .button:focus-visible { transform: translateY(-3px); }
+  .button:active:not(:disabled) { transform: translateY(0) scale(.96); }
+  .service { transition: background-color 220ms ease, transform 320ms var(--ease-arrive), box-shadow 320ms ease; }
+  .service:hover, .service:focus-within { transform: translateY(-7px); box-shadow: 0 14px 28px rgba(16,43,80,.12); }
+  .service-media img { transition: transform 650ms var(--ease-arrive); }
+  .service:hover .service-media img, .service:focus-within .service-media img { transform: scale(1.045); }
+  :root { --section: clamp(80px,6.25vw,120px); }
+  .shell { width: calc(100% - 12vw); max-width: 1720px; }
+  .site-header .shell { width: calc(100% - 6vw); max-width: none; }
+  .header-row { min-height: 104px; }
+  .brand img { width: 178px; height: 80px; }
+  nav { gap: clamp(20px,2vw,36px); }
+  nav a { font-size: 15px; }
+  .hero { background: var(--navy); color: #fff; }
+  .hero-grid.shell { width: 100%; max-width: none; margin: 0; padding: 0; gap: 0; grid-template-columns: 46% 54%; min-height: min(810px,calc(100svh - 140px)); }
+  .hero-copy { padding: 64px 4vw 72px 6vw; }
+  .page-content>section.hero h1 { font-size: clamp(40px,3.7vw,72px); line-height: 1.38; max-width: none; margin-bottom: 30px; }
+  .hero h1 span { color: #b5d8f0; font-size: .5em; max-width: 22ch; line-height: 1.6; margin-top: 24px; }
+  .hero-copy .lead { color: #fff; font-size: clamp(19px,1.45vw,25px); line-height: 1.8; }
+  .hero-copy>p:not(.lead) { color: #d1dfea; max-width: 40ch; font-size: 17px; }
+  .hero .actions { gap: 18px 28px; margin-top: 36px; }
+  .hero .button { background: #fff; color: var(--navy); border-color: #fff; }
+  .hero .button:hover, .hero .button:focus-visible { background: #d9eaf6; }
+  .hero .phone { color: #fff; }
+  .hero :focus-visible { outline-color: #b5d8f0; }
+  .hero-visual { align-self: stretch; padding: 0; display: flex; flex-direction: column; background: #dce8f1; min-height: 540px; }
+  .hero-visual .photo-placeholder { flex: 1; min-height: 100%; border: 0; padding: 50px; }
+  .hero-visual .visual-caption { margin: 0; padding: 15px 28px; background: #f0f6fd; }
+  .hero-visual .photo-placeholder strong { font-size: 25px; }
+  .hero-visual .photo-placeholder p { font-size: 16px; }
+  .hero-visual.hero-media { display: block; }
+  .proof-grid { padding-block: 32px; }
+  .section-heading { grid-template-columns: 1.1fr 1fr; gap: 80px; margin-bottom: 48px; }
+  h2, .page-content>section:first-child h1 { font-size: clamp(32px,2.8vw,48px); }
+  .service-grid { gap: 40px; }
+  .service { padding: 40px; }
+  .service-media { margin: -40px -40px 34px; }
+  .service h3 { font-size: 30px; }
+  .facility-grid { gap: 64px; }
+  .about-grid, .contact-grid, .faq-grid { gap: clamp(60px,7vw,140px); }
+  .work-placeholder { grid-template-columns: 1.1fr 1fr; gap: 7vw; }
+  .work-frame { height: 330px; }
+  .footer-row { padding-block: 10px; }
+}
+@media (min-width: 781px) and (max-width: 1100px) {
+  .brand img { width: 144px; }
+  nav { gap: 15px; } nav a { font-size: 13px; }
+  .hero-copy { padding: 48px 3vw 56px 5vw; }
+  .page-content>section.hero h1 { font-size: 38px; }
+  .hero-visual { min-height: 560px; }
+  .hero-copy>p:not(.lead) { font-size: 15px; }
+  .hero .phone { font-size: 15px; }
+  .hero .button { padding: 13px 20px; }
+}
+@media (max-width: 780px) {
+  .customer-list { grid-template-columns: 1fr; }
+  .service-media { margin: -25px -25px 24px; }
+  .hero-visual.hero-media { padding: 0; min-height: 260px; }
+  .hero-media img { min-height: 260px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *:before, *:after { animation: none !important; transition-duration: .01ms !important; }
+  .button:active:not(:disabled) { transform: none; }
+  .button:hover, .button:focus-visible, .service:hover, .service:focus-within, .service:hover .service-media img, .service:focus-within .service-media img { transform: none; }
+}
+
+
+.customer-logo-section{background:#fff}
+.customer-details{margin-top:22px;border-block:1px solid #d3dfeb}
+.customer-details summary{padding:16px 4px;color:#12365d;font-weight:700;cursor:pointer}
+.customer-details[open] .customer-list{margin-top:0}
+
+/* Open, logo-only rail; the track includes a final gap so the duplicate set aligns exactly. */
+.customer-carousel{position:relative;margin:38px 0 30px}
+.carousel-controls{display:flex;justify-content:flex-end;gap:8px;margin-bottom:12px}
+.carousel-controls button{border:1px solid #ccd9e7;border-radius:999px;background:#fff;color:#12365d;padding:9px 15px;font:inherit;font-weight:600;cursor:pointer;transition:background-color 180ms ease,transform 180ms ease}
+.carousel-controls button:hover,.carousel-controls button:focus-visible{background:#eaf2f8}
+.customer-logo-grid{display:block;overflow:hidden;scroll-behavior:auto;margin:36px 0 24px;border:0;background:transparent}
+.logo-track{--logo-gap:clamp(52px,6vw,92px);display:flex;align-items:center;gap:var(--logo-gap);padding-right:var(--logo-gap);width:max-content}
+.logo-track>.customer-logo{flex:0 0 clamp(132px,14vw,188px);height:112px;min-width:0;min-height:0;margin:0;padding:0;border:0;background:transparent;box-shadow:none;display:flex;align-items:center;justify-content:center}
+.customer-logo .logo-image{width:100%;height:88px;display:flex;align-items:center;justify-content:center}
+.customer-logo img{display:block;width:auto;height:auto;max-width:100%;max-height:78px;object-fit:contain}
+.customer-logo.logo-allplus .logo-image{width:auto;height:auto;padding:10px 12px;background:#082b61}
+.customer-logo.logo-allplus img{width:166px;max-width:100%;max-height:48px}
+.customer-logo.logo-alfredo img{max-width:112px;max-height:92px}
+.customer-logo.logo-rachata img{max-width:86px;max-height:88px}
+.customer-logo.logo-bangkok-life img{max-width:190px;max-height:76px}
+.customer-logo.logo-nidec img{max-width:190px;max-height:72px}
+.customer-logo.logo-nippon-steel img{max-width:228px;max-height:46px}
+.customer-logo.logo-ajinomoto img{max-width:190px;max-height:70px}
+.customer-logo.logo-chacha img{max-width:190px;max-height:64px}
+.customer-logo.logo-tigerpoly img{max-width:188px;max-height:78px}
+.customer-logo.logo-dia-resibon{flex-basis:clamp(248px,20vw,290px)}
+.customer-logo.logo-dia-resibon img{max-width:280px;max-height:64px}
+.customer-logo.logo-dynapack img{max-width:210px;max-height:64px}
+.customer-logo.logo-furuya img{max-width:208px;max-height:68px}
+.customer-logo.logo-taiyo img{max-width:110px;max-height:76px}
+.customer-logo.logo-mec .logo-image{width:auto;height:auto;max-width:calc(100% - 20px);padding:7px 10px;background:#082b61}
+.customer-logo.logo-mec img{max-width:166px;max-height:62px}
+.customer-logo.logo-bitcombine img{max-width:202px;max-height:64px}
+.customer-logo.logo-krungsri-vet img{max-width:206px;max-height:72px}
+.customer-logo.logo-indokordsa .logo-image{width:auto;height:auto;max-width:calc(100% - 20px);padding:8px 12px;background:#082b61}
+.customer-logo.logo-indokordsa img{max-width:174px;max-height:48px}
+.customer-logo.logo-bestex img{max-width:206px;max-height:70px}
+.customer-logo.logo-the-base img{max-width:132px;max-height:94px}
+.customer-logo.logo-trancom img{max-width:206px;max-height:72px}
+.customer-logo.logo-eletto img{max-width:194px;max-height:72px}
+.customer-logo.logo-nitto-kogyo{flex-basis:clamp(232px,18vw,260px)}
+.customer-logo.logo-nitto-kogyo img{max-width:248px;max-height:56px}
+.logo-track.is-moving{animation:logo-drift 44s linear infinite}
+.logo-track.is-paused{animation-play-state:paused}
+@keyframes logo-drift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.work-placeholder .work-frame{overflow:hidden}
+.work-placeholder .work-frame img{width:100%;height:100%;object-fit:cover;transition:transform 650ms cubic-bezier(.16,1,.3,1)}
+.work-placeholder:hover .work-frame img{transform:scale(1.035)}
+@media(max-width:980px){.logo-track{--logo-gap:clamp(38px,6vw,60px)}.logo-track>.customer-logo{flex-basis:clamp(126px,16vw,160px)}}
+@media(max-width:640px){.customer-logo-grid{margin-block:28px 20px}.logo-track{--logo-gap:34px}.logo-track>.customer-logo{flex-basis:122px;height:98px}.customer-logo .logo-image{height:76px}.customer-logo.logo-allplus img{width:126px;max-height:38px}.customer-logo.logo-alfredo img{max-width:96px;max-height:76px}.customer-logo.logo-rachata img{max-width:72px;max-height:76px}.customer-logo.logo-bangkok-life img,.customer-logo.logo-nidec img,.customer-logo.logo-ajinomoto img{max-height:58px}.customer-logo.logo-nippon-steel img{max-width:160px;max-height:36px}}
+@media(prefers-reduced-motion:reduce){.logo-track.is-moving:not(.motion-enabled){animation:none}.logo-track.is-moving.motion-enabled{animation:logo-drift 44s linear infinite!important}.logo-track.is-moving.motion-enabled.is-paused{animation-play-state:paused!important}.customer-logo-grid{scroll-behavior:auto}.work-placeholder:hover .work-frame img{transform:none}}

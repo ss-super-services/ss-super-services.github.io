@@ -1,0 +1,39 @@
+
+.site-contact{padding:clamp(56px,8vw,100px) 0}
+.site-contact .section-heading{align-items:end}
+.site-contact .section-heading h2{margin:0;color:var(--navy);font-size:clamp(28px,3vw,40px);line-height:1.4}
+.site-contact .section-heading>p{max-width:58ch}
+.site-contact-form{width:min(100%,980px);margin:34px auto 0;padding:clamp(22px,4vw,42px);border:1px solid var(--line);background:#fff}
+.site-contact-form>.contact-form-brand{display:block;width:180px;max-width:100%;height:auto;margin:-24px 0 28px -24px;object-fit:contain;grid-column:1/-1}
+@media(max-width:700px){.site-contact-form>.contact-form-brand{width:160px;margin:-10px 0 24px -10px}}
+.site-contact-form .form-row{grid-template-columns:1fr 1fr;gap:18px;margin-bottom:14px}
+.site-contact-form label{display:block;margin-bottom:18px;color:var(--ink);font-size:14px;font-weight:500}
+.site-contact-form input,.site-contact-form select,.site-contact-form textarea{width:100%;margin-top:7px}
+.site-contact-form .site-contact-detail{display:block}
+.site-contact-form .form-help{margin:0 0 18px;color:var(--muted,#51688b);font-size:14px}
+.site-contact-form .spam-trap{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.site-contact-form .turnstile-slot{margin:0 0 18px}
+.site-contact-form .button{width:100%}
+.site-contact-form .form-status{min-height:26px;font-size:14px}
+.site-footer{padding:48px 0 36px;border-top:1px solid var(--line);background:#082b61;color:#fff}
+.site-footer-grid{display:grid;grid-template-columns:minmax(220px,.9fr) minmax(260px,1fr) minmax(125px,.55fr);align-items:start;gap:clamp(28px,5vw,72px)}
+.site-footer-brand{display:block;width:min(100%,360px);padding:10px;background:#fff}
+.site-footer-brand img{display:block;width:100%;height:auto}
+.site-footer-contact h2{margin:0 0 8px;color:#fff;font-size:20px}
+.site-footer-contact>p{margin:0 0 18px;color:#dce8f5;font-size:14px}
+.site-footer-contact address{display:grid;gap:13px;font-style:normal}
+.site-footer-contact address a{display:grid;gap:3px;color:#fff}
+.site-footer-contact address small{color:#c4d7eb;font-size:12px}
+.site-footer-contact address strong{font-size:15px}
+.site-footer-contact .business-address p{margin:4px 0 0;color:#fff;font-size:14px;line-height:1.7}
+nav.site-footer-links{display:grid;position:static;width:auto;align-content:start;gap:10px;padding:0;border:0;background:transparent;color:#fff;font-size:14px}
+.site-footer-links a{color:inherit}.site-footer-links a:hover{color:#bddbf5}
+@media(max-width:780px){
+.site-contact .section-heading{grid-template-columns:1fr;gap:12px}
+.site-contact-form .form-row{grid-template-columns:1fr;gap:0}
+.site-footer-grid{grid-template-columns:1fr;gap:28px}
+.site-footer-brand{width:min(100%,330px)}
+nav.site-footer-links{display:grid!important;position:static!important;width:auto!important;gap:10px;padding:0!important;border:0!important;background:transparent!important}
+}
+.image-provenance-note{display:block;margin:8px 0 0;color:var(--muted,#51688b);font-size:12px;line-height:1.5}
+.home-service-card-copy .image-provenance-note{margin:0 0 8px}
